@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fuel Finder — Find the Cheapest Fuel Near You</title>
+  <style>
+    :root { --blue: #007AFF; --bg: #F9FAFB; --text: #1C1C1E; --muted: #6B7280; --card: #FFFFFF; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+
+    /* Hero */
+    .hero { background: linear-gradient(135deg, #007AFF 0%, #0055CC 100%); color: white; text-align: center; padding: 60px 24px 48px; }
+    .hero h1 { font-size: 36px; font-weight: 800; margin-bottom: 8px; }
+    .hero .tagline { font-size: 18px; opacity: 0.9; margin-bottom: 24px; }
+    .hero .icon { font-size: 64px; margin-bottom: 16px; }
+    .badges { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 24px; }
+    .badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); border-radius: 10px; padding: 10px 20px; color: white; font-size: 14px; font-weight: 600; text-decoration: none; transition: background 0.2s; }
+    .badge:hover { background: rgba(255,255,255,0.3); text-decoration: none; }
+
+    /* Content */
+    .container { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+
+    /* Features */
+    .features { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 32px 0; }
+    @media (max-width: 600px) { .features { grid-template-columns: 1fr; } }
+    .feature { background: var(--card); border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+    .feature .emoji { font-size: 28px; margin-bottom: 8px; }
+    .feature h3 { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+    .feature p { font-size: 14px; color: var(--muted); }
+
+    h2 { font-size: 22px; font-weight: 700; margin: 36px 0 12px; }
+    p { font-size: 15px; margin-bottom: 12px; }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #E5E7EB; font-size: 13px; color: var(--muted); text-align: center; }
+    .footer a { color: var(--muted); }
+    ul { padding-left: 24px; margin-bottom: 12px; }
+    li { font-size: 15px; margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="icon">⛽</div>
+    <h1>Fuel Finder</h1>
+    <p class="tagline">Find the cheapest fuel near you — UK-wide, real-time prices</p>
+    <div class="badges">
+      <a class="badge" href="#">
+        <span>🍎</span> Coming Soon on App Store
+      </a>
+      <a class="badge" href="#">
+        <span>🤖</span> Coming Soon on Google Play
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>What is Fuel Finder?</h2>
+    <p>Fuel Finder shows you real-time fuel prices at over 7,500 fuel stations across the United Kingdom. Using official government data, the app helps you find the cheapest petrol or diesel near your location — saving you money every time you fill up.</p>
+
+    <div class="features">
+      <div class="feature">
+        <div class="emoji">🗺️</div>
+        <h3>Live Map</h3>
+        <p>See every fuel station near you on an interactive map with colour-coded price pins.</p>
+      </div>
+      <div class="feature">
+        <div class="emoji">💰</div>
+        <h3>Real-Time Prices</h3>
+        <p>Prices updated throughout the day from official UK Government data.</p>
+      </div>
+      <div class="feature">
+        <div class="emoji">⛽</div>
+        <h3>5 Fuel Types</h3>
+        <p>Filter by E10, E5 Premium, Diesel, Premium Diesel, or HVO.</p>
+      </div>
+      <div class="feature">
+        <div class="emoji">🧭</div>
+        <h3>One-Tap Directions</h3>
+        <p>Get directions to any station instantly via Apple Maps or Google Maps.</p>
+      </div>
+      <div class="feature">
+        <div class="emoji">🔍</div>
+        <h3>Postcode Search</h3>
+        <p>Search by postcode or address to find cheap fuel anywhere in the UK.</p>
+      </div>
+      <div class="feature">
+        <div class="emoji">📴</div>
+        <h3>Offline Mode</h3>
+        <p>View your last search results even without an internet connection.</p>
+      </div>
+    </div>
+
+    <h2>Data Source</h2>
+    <p>All fuel price data is sourced from the <strong>UK Government Fuel Finder service</strong> and is used under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">Open Government Licence v3.0</a>. Prices are provided directly by fuel retailers to the government.</p>
+
+    <h2>Support</h2>
+    <p>Having trouble with the app? We're here to help.</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:fuelfinder.ukapp@gmail.com">fuelfinder.ukapp@gmail.com</a></li>
+    </ul>
+    <p>We aim to respond to all support requests within 48 hours.</p>
+
+    <h2>Common Questions</h2>
+    <p><strong>Q: How accurate are the prices?</strong><br>
+    Prices come directly from the UK Government's mandatory reporting system. Retailers are legally required to report price changes, so data is typically accurate to within a few hours.</p>
+
+    <p><strong>Q: Why can't I see a station near me?</strong><br>
+    The app shows stations that report to the UK Government Fuel Finder service. Some very small independent stations may not be included.</p>
+
+    <p><strong>Q: Does the app work outside the UK?</strong><br>
+    No — Fuel Finder only covers fuel stations in the United Kingdom (England, Scotland, Wales, and Northern Ireland).</p>
+
+    <p><strong>Q: Does the app track my location?</strong><br>
+    Your location is used on-device only to show nearby stations. It is never sent to our servers or shared with anyone. See our <a href="privacy-policy.html">Privacy Policy</a> for details.</p>
+
+    <div class="footer">
+      <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="mailto:fuelfinder.ukapp@gmail.com">Contact</a></p>
+      <p style="margin-top: 8px;">&copy; 2026 Yuvraj Shridhar. All rights reserved.</p>
+      <p>Fuel price data provided by the UK Government under the Open Government Licence v3.0.</p>
+    </div>
+  </div>
+</body>
+</html>
